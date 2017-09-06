@@ -11,6 +11,7 @@ public class UnetMa : NetworkManager {
 	}
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
     {
+        print(playerPrefab);
         var player = Instantiate(playerPrefab);
         NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
     }
