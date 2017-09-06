@@ -7,6 +7,7 @@ public class UnetMa : NetworkManager {
 
     // Use this for initialization
     void Start () {
+        print(playerPrefab);
 		
 	}
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
